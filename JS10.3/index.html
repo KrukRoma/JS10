@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Information</h2>
+        <form id="userForm">
+            <div class="form-row">
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-row">
+                <label for="lastname">Lastname:</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-row">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div class="form-row">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+            <div class="form-row">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="UK">UK</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-row">
+                <label>Skills:</label>
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="JS"> JS</label>
+                <label><input type="checkbox" name="skills" value="PHP"> PHP</label>
+                <label><input type="checkbox" name="skills" value="C++"> C++</label>
+                <label><input type="checkbox" name="skills" value="JAVA"> JAVA</label>
+                <label><input type="checkbox" name="skills" value="C#"> C#</label>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <div class="result-container">
+        <h3>Result:</h3>
+        <table id="resultTable"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
